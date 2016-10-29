@@ -16,7 +16,7 @@
         public      static      CANVAS_HEIGHT                               :number             = 600;
 
         /** The delay between each thread tick in milliseconds. */
-        public      static      THREAD_DELAY                                :number             = 10;
+        public      static      THREAD_DELAY                                :number             = 20;
 
         /** The desired level width. */
         public      static      LEVEL_WIDTH                                 :number             = 2000;
