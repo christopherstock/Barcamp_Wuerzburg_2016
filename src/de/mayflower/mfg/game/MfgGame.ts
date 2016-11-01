@@ -44,9 +44,6 @@
                 MfgSetting.CANVAS_WIDTH,
                 MfgSetting.CANVAS_HEIGHT
             );
-            document.body.appendChild( this.canvas.getCanvasTag() );
-
-
 
             //attach listeners for keys and pointer
             this.keySystem = new MfgKeySystem();
@@ -74,15 +71,14 @@
                 this.soundSystem.playSound( MfgSound.SOUND_BG_TD2 );
             }
 
-
-
             //init a new level
             this.level = new MfgLevel();
             this.camera = new MfgCamera();
             this.hud = new MfgHUD();
 
-
-
+            //hide preloader, darken bg and show canvas
+            document.getElementById("preloader").hidden = true;
+            document.body.appendChild( this.canvas.getCanvasTag() );
 
             //start the main thread
             window.setInterval( this.tick, MfgSetting.THREAD_DELAY );
