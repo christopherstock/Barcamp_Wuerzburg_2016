@@ -1,4 +1,4 @@
-module Driver
+module de.christopherstock.driver
 {
     /*****************************************************************************
     *   Represents a level setup.
@@ -240,20 +240,12 @@ module Driver
             if ( this.player.crashed || this.player.won ) return;
 
             this.player.handlePlayerKeys();
-
             this.player.clipToLevelBounds();
-
-
-
-this.player.moveDown();
-this.moveAllObstacles();
-
-
+            this.player.moveDown();
+            this.moveAllObstacles();
 
             if ( !MfgDebug.DEBUG_ENABLE_FREE_MOVEMENT )
             {
-
-
                 this.checkCollision();
             }
         }

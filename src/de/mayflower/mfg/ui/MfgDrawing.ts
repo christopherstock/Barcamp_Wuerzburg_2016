@@ -1,4 +1,4 @@
-module Driver
+module de.christopherstock.driver
 {
     /*****************************************************************************
     *   Offers independent drawing functionality for the canvas.

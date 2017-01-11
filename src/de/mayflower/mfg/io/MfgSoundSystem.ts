@@ -1,4 +1,4 @@
-module Driver
+module de.christopherstock.driver
 {
     /*****************************************************************************
     *   Loads and manages all desired sounds.

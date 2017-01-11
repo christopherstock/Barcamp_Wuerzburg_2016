@@ -1,4 +1,4 @@
-module Driver
+module de.christopherstock.driver
 {
     /*****************************************************************************
     *   All adjustments and balancings for the application.

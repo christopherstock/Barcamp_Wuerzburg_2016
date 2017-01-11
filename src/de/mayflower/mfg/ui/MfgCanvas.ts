@@ -1,4 +1,4 @@
-module Driver
+module de.christopherstock.driver
 {
     /*****************************************************************************
     *   Represents the 2D drawing surface.

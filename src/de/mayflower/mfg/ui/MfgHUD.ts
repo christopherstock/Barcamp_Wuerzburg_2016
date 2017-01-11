@@ -1,4 +1,4 @@
-module Driver
+module de.christopherstock.driver
 {
     /************************************************************************************
     *   Manages the Heads Up Display.

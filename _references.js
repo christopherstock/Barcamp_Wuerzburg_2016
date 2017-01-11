@@ -19,4 +19,3 @@
 /// <reference path="src/de/mayflower/mfg/ui/MfgHUD.ts" />
 /// <reference path="src/de/mayflower/mfg/util/MfgDirection.ts" />
 /// <reference path="src/de/mayflower/mfg/util/MfgRect2D.ts" />
-//# sourceMappingURL=_references.js.map
