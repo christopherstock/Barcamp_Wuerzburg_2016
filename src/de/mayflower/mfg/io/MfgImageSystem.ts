@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Loads and manages all desired images.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgImageSystem
+    export class MfgImageSystem
     {
         /** All filenames. */
         private                 fileNames           :Array<string>              = [];
@@ -88,3 +89,4 @@
             return this.loadedImages[ id ];
         }
     }
+}

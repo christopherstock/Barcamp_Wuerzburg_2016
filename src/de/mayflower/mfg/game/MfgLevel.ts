@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Represents a level setup.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgLevel
+    export class MfgLevel
     {
         /** The player instance. */
         public                      player          :MfgPlayer                          = null;
@@ -299,3 +300,4 @@ this.moveAllObstacles();
             this.player.colliding = false;
         }
     }
+}

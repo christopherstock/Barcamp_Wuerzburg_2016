@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   A rectangular in 2D space.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgRect2D
+    export class MfgRect2D
     {
         /** The left coordinate. */
         public              x               :number                     = 0;
@@ -52,3 +53,4 @@
             );
         }
     }
+}

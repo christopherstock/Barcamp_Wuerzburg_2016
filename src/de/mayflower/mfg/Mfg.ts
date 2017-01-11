@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   The main class that contains the points of entry and termination.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class Mfg
+    export class Mfg
     {
         /** The game instance. */
         public      static      game            :MfgGame                = null;
@@ -34,3 +35,4 @@
     window.onunload = function()
     {
     };
+}

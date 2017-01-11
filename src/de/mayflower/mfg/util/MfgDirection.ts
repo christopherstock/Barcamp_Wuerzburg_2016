@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Specifies the four primal directions in 2D space.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    enum MfgDirection
+    export enum MfgDirection
     {
         /** North. */
         NORTH,
@@ -31,3 +32,4 @@
         /** North west. */
         NORTH_WEST,
     }
+}

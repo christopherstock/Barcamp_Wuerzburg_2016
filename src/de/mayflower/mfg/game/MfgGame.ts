@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Handles the game logic.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgGame
+    export class MfgGame
     {
         /** The canvas for all drawing operations. */
         public                          canvas              :MfgCanvas                      = null;
@@ -148,3 +149,4 @@
             );
         }
     }
+}

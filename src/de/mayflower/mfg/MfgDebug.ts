@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   The debug system.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgDebug
+    export class MfgDebug
     {
         /** Enables vertical movement. */
         public      static      DEBUG_ENABLE_FREE_MOVEMENT                  :boolean            = false;
@@ -31,3 +32,4 @@
             MfgDebug.DEBUG_ENABLE_FREE_MOVEMENT = !MfgDebug.DEBUG_ENABLE_FREE_MOVEMENT;
         }
     }
+}

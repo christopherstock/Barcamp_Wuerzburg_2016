@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Represents an obstacle.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgObstacle
+    export class MfgObstacle
     {
         /** The bounding rectangle. */
         public          rect                        :MfgRect2D                      = null;
@@ -133,3 +134,4 @@
             }
         }
     }
+}

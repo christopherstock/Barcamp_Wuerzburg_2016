@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   All adjustments and balancings for the application.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgSetting
+    export class MfgSetting
     {
         /** The application's title. */
         public      static      TITLE                                       :string             = "HTML5 TypeScript primer, (c) 2016 Mayflower GmbH, v. 1.0";
@@ -49,3 +50,4 @@
         /** The height of the preloading gauge. */
         public      static      PRELOADER_HEIGHT                            :number             = 15;
     }
+}

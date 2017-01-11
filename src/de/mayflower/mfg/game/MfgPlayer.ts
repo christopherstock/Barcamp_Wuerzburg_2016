@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Represents the player.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgPlayer
+    export class MfgPlayer
     {
         /** The bounding rectangle. */
         public          rect                        :MfgRect2D                      = null;
@@ -145,3 +146,4 @@
             }
         }
     }
+}

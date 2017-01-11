@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Specifies all different images being used in the game.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgImage
+    export class MfgImage
     {
         /** The image for the 'player default'. */
         public      static      PLAYER_DEFAULT          :string                 = MfgSetting.PATH_IMAGE + "player/default.png";
@@ -123,3 +124,4 @@
             MfgImage.OBSTACLE_SIGN_1,
         ];
     }
+}

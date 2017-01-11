@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Manages the camera that calculates the visible area for the user.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgCamera
+    export class MfgCamera
     {
         /** Current horizontal offset. */
         public              x                       :number                 = 0;
@@ -53,3 +54,4 @@
             if ( this.y > levelHeight - canvasHeight ) this.y = levelHeight - canvasHeight;
         }
     }
+}

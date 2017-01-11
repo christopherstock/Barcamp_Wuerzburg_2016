@@ -1,11 +1,12 @@
-
+module Driver
+{
     /************************************************************************************
     *   Manages the Heads Up Display.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     ************************************************************************************/
-    class MfgHUD
+    export class MfgHUD
     {
         /** The FPS display. */
         public                      fpsMeter                :FPSMeter                       = null;
@@ -37,3 +38,4 @@
 
         }
     }
+}

@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Loads and manages all desired sounds.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgSoundSystem
+    export class MfgSoundSystem
     {
         /** This array contains all loaded sounds. */
         private                     allSounds                               :Array<HTMLAudioElement>    = [];
@@ -20,7 +21,12 @@
             //load all sounds
             for ( var i:number = 0; i < fileNames.length; ++i )
             {
-                this.allSounds[ fileNames[ i ] ] = new Audio( fileNames[ i ] );
+                try
+                {
+                    this.allSounds[ fileNames[ i ] ] = new Audio( fileNames[ i ] );
+                }
+                catch (e) {
+                }
             }
         }
 
@@ -31,7 +37,13 @@
         *****************************************************************************/
         public playSound( id:string )
         {
-            var clipClone:HTMLAudioElement = <HTMLAudioElement>this.allSounds[ id ].cloneNode( true );
-            clipClone.play();
+            try
+            {
+                var clipClone:HTMLAudioElement = <HTMLAudioElement>this.allSounds[ id ].cloneNode( true );
+                clipClone.play();
+            }
+            catch (e) {
+            }
         }
     }
+}

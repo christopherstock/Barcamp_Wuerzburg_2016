@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Offers independent drawing functionality for the canvas.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgDrawing
+    export class MfgDrawing
     {
         /** The RGBA statement representing color 'white' with full opacity. */
         public      static      COLOR_WHITE_OPAQUE                      :string         = "rgba( 255, 255, 255, 1.0  )";
@@ -94,3 +95,4 @@
             );
         }
     }
+}

@@ -1,11 +1,12 @@
-
+module Driver
+{
     /*****************************************************************************
     *   Represents the 2D drawing surface.
     *
     *   @author  Christopher Stock
     *   @version 1.0
     *****************************************************************************/
-    class MfgCanvas
+    export class MfgCanvas
     {
         /** The HTML canvas tag that can be added to the website's body. */
         private                         iCanvasTag      :HTMLCanvasElement              = null;
@@ -73,3 +74,4 @@
             return this.iCanvasTag.height;
         }
     }
+}
