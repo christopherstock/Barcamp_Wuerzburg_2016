@@ -42,7 +42,7 @@ module de.christopherstock.driver
             //browse all filenames
             for ( var i = 0; i < this.fileNames.length; ++i )
             {
-                this.loadedImages[ this.fileNames[ i ] ] = this.loadImage( this.fileNames[ i ] );
+                this.loadedImages[ <any>this.fileNames[ i ] ] = this.loadImage( this.fileNames[ i ] );
             }
         }
 
@@ -86,7 +86,7 @@ module de.christopherstock.driver
         *****************************************************************************/
         public getImage( id:string ):HTMLImageElement
         {
-            return this.loadedImages[ id ];
+            return this.loadedImages[ <any>id ];
         }
     }
 }

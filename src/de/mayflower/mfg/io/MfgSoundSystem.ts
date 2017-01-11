@@ -23,7 +23,7 @@ module de.christopherstock.driver
             {
                 try
                 {
-                    this.allSounds[ fileNames[ i ] ] = new Audio( fileNames[ i ] );
+                    this.allSounds[ <any>fileNames[ i ] ] = new Audio( fileNames[ i ] );
                 }
                 catch (e) {
                 }
@@ -39,7 +39,7 @@ module de.christopherstock.driver
         {
             try
             {
-                var clipClone:HTMLAudioElement = <HTMLAudioElement>this.allSounds[ id ].cloneNode( true );
+                var clipClone:HTMLAudioElement = <HTMLAudioElement>this.allSounds[ <any>id ].cloneNode( true );
                 clipClone.play();
             }
             catch (e) {
